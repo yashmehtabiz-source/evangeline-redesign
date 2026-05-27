@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------ */
+/*  Evangeline design tokens (Tailwind CSS v4 @theme = source of truth) */
+/*  These generate utilities like bg-bg, text-ink, border-taupe, etc.   */
+/* ------------------------------------------------------------------ */
+@theme {
+  /* Palette */
+  --color-bg: #f5efe6; /* warm cream — page background */
+  --color-surface: #faf7f2; /* ivory — card surfaces */
+  --color-ink: #1a1a1a; /* primary text, headlines */
+  --color-ink-soft: #4a4a4a; /* secondary text */
+  --color-sage: #7a8a78; /* single accent — CTAs, links, marks */
+  --color-taupe: #c9b8a8; /* dividers, label bg, subtle borders */
+  --color-placeholder: #ede5d8; /* placeholder block background */
+
+  /* Fonts — bound to next/font CSS variables (see layout.tsx) */
+  --font-display: var(--font-fraunces), Georgia, serif;
+  --font-body: var(--font-inter-tight), system-ui, sans-serif;
+
+  /* Type scale (desktop-leaning; components scale down at mobile) */
+  --text-hero: 5rem; /* 80px */
+  --text-hero--line-height: 1.02;
+  --text-hero--letter-spacing: -0.02em;
+
+  --text-section: 2.5rem; /* 40px */
+  --text-section--line-height: 1.1;
+  --text-section--letter-spacing: -0.01em;
+
+  --text-body: 1.0625rem; /* 17px */
+  --text-body--line-height: 1.6;
+
+  /* Radius — subtle only, no pills */
+  --radius-card: 2px;
+  --radius-control: 4px;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Base                                                                */
+/* ------------------------------------------------------------------ */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 450;
+    color: var(--color-ink);
+  }
+
+  /* Fraunces optical sizing — large display, soft contrast */
+  h1,
+  h2 {
+    font-optical-sizing: auto;
+  }
+
+  ::selection {
+    background-color: var(--color-sage);
+    color: var(--color-surface);
+  }
+}
