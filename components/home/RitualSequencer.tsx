@@ -60,8 +60,8 @@ export default function RitualSequencer() {
   }, []);
 
   return (
-    <div className="flex min-h-[420px] flex-col items-center justify-center md:min-h-[560px]">
-      <div className="grid w-full grid-cols-2 gap-4 md:grid-cols-4">
+    <div className="flex min-h-[500px] flex-col items-center justify-center md:min-h-[640px]">
+      <div className="grid w-full grid-cols-2 gap-2 md:grid-cols-4 md:gap-3">
         {BOTTLES.map((b) => (
           <div
             key={b.src}
@@ -71,7 +71,7 @@ export default function RitualSequencer() {
             }`}
           >
             {/* items-end → all bottles sit on a shared floor regardless of canvas */}
-            <div className="flex h-56 items-end justify-center md:h-72 lg:h-80 xl:h-96">
+            <div className="flex h-72 items-end justify-center md:h-96 lg:h-[28rem] xl:h-[32rem]">
               <Image
                 src={b.src}
                 alt={b.alt}
