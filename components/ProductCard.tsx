@@ -1,4 +1,5 @@
 import Placeholder from "./Placeholder";
+import BrandImage from "./BrandImage";
 import Button from "./Button";
 import type { Product, ProductCategory } from "@/lib/products";
 
@@ -20,10 +21,16 @@ export default function ProductCard({ product, index }: ProductCardProps) {
 
   return (
     <div className="flex h-full flex-col">
-      <Placeholder
-        label={`PRODUCT — ${product.name}`}
-        aspectRatio="1/1"
-      />
+      {product.image ? (
+        <BrandImage
+          src={product.image}
+          alt={`${product.name} bottle on a white background`}
+          aspectRatio="1/1"
+          sizes="(max-width: 768px) 50vw, 25vw"
+        />
+      ) : (
+        <Placeholder label={`PRODUCT — ${product.name}`} aspectRatio="1/1" />
+      )}
       <p className="mt-4 text-[11px] uppercase tracking-[0.16em] text-sage">
         {`Step ${step} — ${STEP_WORD[product.category]}`}
       </p>

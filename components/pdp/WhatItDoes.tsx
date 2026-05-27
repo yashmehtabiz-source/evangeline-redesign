@@ -1,5 +1,5 @@
 import Section from "@/components/Section";
-import Placeholder from "@/components/Placeholder";
+import BrandImage from "@/components/BrandImage";
 import Eyebrow from "@/components/Eyebrow";
 import Reveal from "@/components/Reveal";
 
@@ -53,10 +53,11 @@ export default function WhatItDoes() {
 
         {/* Image — ~60% */}
         <Reveal delay={120} className="md:col-span-3">
-          <Placeholder
-            label="Texture or Hero Lifestyle"
+          <BrandImage
+            src="/brand/products/textures-dollops.jpg"
+            alt="Evangeline product textures — four dollops in a row"
             aspectRatio="4/5"
-            note="Dropper releasing serum onto fingertip, or close-up of texture being applied — soft directional light"
+            sizes="(max-width: 768px) 100vw, 60vw"
           />
         </Reveal>
       </div>

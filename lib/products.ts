@@ -9,6 +9,8 @@ export interface Product {
   shortDesc: string;
   keyIngredients: string[];
   heroPromise: string;
+  /** Front-on product photo path; absent when only a placeholder exists. */
+  image?: string;
 }
 
 export const products: Product[] = [
@@ -43,6 +45,7 @@ export const products: Product[] = [
     ],
     heroPromise:
       "Biostimulation at the center of your routine — visibly firmer, more resilient skin over time.",
+    image: "/brand/products/biostem-serum-front.jpg",
   },
   {
     slug: "biopeptide-eye-restore",

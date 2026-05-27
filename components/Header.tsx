@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const NAV = [
   { label: "Shop", href: "/shop" },
@@ -50,12 +51,16 @@ export default function Header() {
             <MenuIcon open={menuOpen} />
           </button>
 
-          {/* Wordmark */}
-          <Link
-            href="/"
-            className="font-display text-lg tracking-[0.28em] text-ink md:text-xl"
-          >
-            EVANGELINE
+          {/* Brand lockup */}
+          <Link href="/" aria-label="Evangeline — home">
+            <Image
+              src="/brand/logo/evangeline-lockup.png"
+              alt="Evangeline"
+              width={400}
+              height={208}
+              priority
+              className="h-11 w-auto md:h-12"
+            />
           </Link>
 
           {/* Desktop nav */}

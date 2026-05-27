@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import NewsletterForm from "./NewsletterForm";
 
 const LINK_COLS = [
@@ -34,9 +35,13 @@ export default function Footer() {
       <div className="mx-auto grid max-w-6xl gap-12 px-5 py-16 md:grid-cols-3 md:px-10 md:py-20">
         {/* Col 1 — brand */}
         <div>
-          <p className="font-display text-base tracking-[0.24em] text-ink">
-            EVANGELINE
-          </p>
+          <Image
+            src="/brand/logo/evangeline-lockup.png"
+            alt="Evangeline"
+            width={400}
+            height={208}
+            className="h-9 w-auto md:h-10"
+          />
           <p className="mt-4 max-w-xs font-body text-sm leading-relaxed text-ink-soft">
             Biostimulating skincare from Toronto — clinical credibility, made
             accessible.

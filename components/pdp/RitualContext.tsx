@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import Section from "@/components/Section";
 import Button from "@/components/Button";
-import Placeholder from "@/components/Placeholder";
+import BrandImage from "@/components/BrandImage";
 import Eyebrow from "@/components/Eyebrow";
 import Reveal from "@/components/Reveal";
 
@@ -27,10 +27,11 @@ export default function RitualContext() {
       <Reveal>
         <div className="grid items-center gap-10 rounded-[var(--radius-card)] border border-taupe/60 bg-surface p-6 md:grid-cols-2 md:gap-12 md:p-12">
           {/* Flat-lay */}
-          <Placeholder
-            label="Ritual Flat-Lay — Biostem in context"
+          <BrandImage
+            src="/brand/products/ritual-group-2.jpg"
+            alt="The four Evangeline products arranged together"
             aspectRatio="1/1"
-            note="All four products arranged on warm cream surface with hand reaching toward Biostem"
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
 
           {/* Copy */}

@@ -1,5 +1,5 @@
 import Button from "@/components/Button";
-import Placeholder from "@/components/Placeholder";
+import BrandImage from "@/components/BrandImage";
 import Eyebrow from "@/components/Eyebrow";
 import Reveal from "@/components/Reveal";
 
@@ -30,10 +30,12 @@ export default function Hero() {
 
         {/* Editorial image */}
         <Reveal delay={120} className="md:pl-6">
-          <Placeholder
-            label="Editorial Hero"
+          <BrandImage
+            src="/brand/products/ritual-group-1.jpg"
+            alt="Evangeline ritual — the four-product collection"
             aspectRatio="4/5"
-            note="Founder portrait OR product-in-hand close-up, soft natural light, warm cream backdrop"
+            priority
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
         </Reveal>
       </div>

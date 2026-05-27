@@ -2,16 +2,17 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import Button from "@/components/Button";
-import Placeholder from "@/components/Placeholder";
+import BrandImage from "@/components/BrandImage";
 import Eyebrow from "@/components/Eyebrow";
 import Stars from "@/components/Stars";
 
 const THUMBS = [
-  "Bottle Front",
-  "Bottle Angled",
-  "Dropper + Texture",
-  "In-Hand Scale",
+  { alt: "Biostem Serum, front view", src: "/brand/products/biostem-serum-front.jpg" },
+  { alt: "Biostem Serum, angled view", src: "/brand/products/biostem-serum-angled.jpg" },
+  { alt: "Biostem Serum, detail view", src: "/brand/products/biostem-serum-detail.jpg" },
+  { alt: "Evangeline serum textures", src: "/brand/products/textures-dollops.jpg" },
 ];
 
 export default function PdpHero() {
@@ -24,24 +25,32 @@ export default function PdpHero() {
       <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-2 md:gap-14">
         {/* Gallery */}
         <div>
-          <Placeholder
-            label="Biostem Serum — Primary Hero"
+          <BrandImage
+            src={THUMBS[active].src}
+            alt={THUMBS[active].alt}
             aspectRatio="1/1"
-            note="Bottle on warm cream backdrop, soft directional light, slight angle, ideally with a dropper-extended companion shot"
+            priority
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
           <div className="mt-4 grid grid-cols-4 gap-3">
-            {THUMBS.map((label, i) => (
+            {THUMBS.map((t, i) => (
               <button
-                key={label}
+                key={t.src}
                 type="button"
                 onClick={() => setActive(i)}
-                aria-label={label}
+                aria-label={t.alt}
                 style={{ aspectRatio: "1/1" }}
-                className={`flex items-center justify-center rounded-[var(--radius-card)] bg-placeholder px-1 text-center text-[8px] uppercase leading-tight tracking-[0.1em] text-sage transition-colors ${
+                className={`relative overflow-hidden rounded-[var(--radius-card)] bg-placeholder transition-colors ${
                   active === i ? "border border-sage" : "border border-taupe/60"
                 }`}
               >
-                {label}
+                <Image
+                  src={t.src}
+                  alt=""
+                  fill
+                  sizes="120px"
+                  className="object-cover"
+                />
               </button>
             ))}
           </div>

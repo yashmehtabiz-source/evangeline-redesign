@@ -23,6 +23,7 @@ export const metadata: Metadata = {
   title: "Evangeline — Biostimulating Skincare",
   description:
     "Biostimulating skincare from Toronto. Clinical credibility, made accessible. Built by Dr. Riam Shammaa, MD.",
+  icons: { icon: "/favicon.png" },
 };
 
 export default function RootLayout({
