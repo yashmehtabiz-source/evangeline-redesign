@@ -36,11 +36,11 @@ export default function Footer() {
         {/* Col 1 — brand */}
         <div>
           <Image
-            src="/brand/logo/evangeline-lockup.png"
+            src="/brand/logo/evangeline-wordmark-black.png"
             alt="Evangeline"
-            width={400}
-            height={208}
-            className="h-9 w-auto md:h-10"
+            width={1000}
+            height={119}
+            className="h-9 w-auto"
           />
           <p className="mt-4 max-w-xs font-body text-sm leading-relaxed text-ink-soft">
             Biostimulating skincare from Toronto — clinical credibility, made

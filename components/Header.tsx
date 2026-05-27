@@ -51,15 +51,15 @@ export default function Header() {
             <MenuIcon open={menuOpen} />
           </button>
 
-          {/* Brand lockup */}
+          {/* Brand wordmark */}
           <Link href="/" aria-label="Evangeline — home">
             <Image
-              src="/brand/logo/evangeline-lockup.png"
+              src="/brand/logo/evangeline-wordmark-black.png"
               alt="Evangeline"
-              width={400}
-              height={208}
+              width={1000}
+              height={119}
               priority
-              className="h-11 w-auto md:h-12"
+              className="h-7 w-auto md:h-8"
             />
           </Link>
 

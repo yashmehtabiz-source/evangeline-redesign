@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Button from "@/components/Button";
 import Eyebrow from "@/components/Eyebrow";
 import Reveal from "@/components/Reveal";
@@ -6,6 +7,13 @@ export default function AboutCta() {
   return (
     <section className="bg-sage px-5 py-20 text-surface md:px-10 md:py-32">
       <Reveal className="mx-auto max-w-[720px] text-center">
+        <Image
+          src="/brand/logo/evangeline-wordmark-vanilla.png"
+          alt="Evangeline"
+          width={1000}
+          height={119}
+          className="mx-auto mb-8 h-8 w-auto md:h-10"
+        />
         <Eyebrow tone="ivory" className="text-center">
           Begin
         </Eyebrow>
