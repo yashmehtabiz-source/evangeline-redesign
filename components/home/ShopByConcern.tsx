@@ -10,7 +10,8 @@ const CONCERNS: Concern[] = [
     title: "Biostem Serum",
     body: "Botanical stem cells and Vitamin C to visibly lift and tone.",
     href: "/shop/biostem-serum",
-    image: "/brand/products/biostem-serum-angled.jpg",
+    image: "/brand/products/concern-firmness.jpg",
+    imageAlt: "Firmness — fresh sage sprig on cream linen",
   },
   {
     name: "Hydration & Barrier",
