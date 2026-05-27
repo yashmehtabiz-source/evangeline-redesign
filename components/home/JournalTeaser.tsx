@@ -10,6 +10,8 @@ const ENTRIES: JournalEntry[] = [
     excerpt:
       "The difference between skincare that sits on the surface and skincare that prompts the skin to renew itself.",
     href: "/journal",
+    image: "/brand/products/journal-science.jpg",
+    imageAlt: "Cellular biostimulation — macro cellular structures",
   },
   {
     category: "Ritual",
@@ -17,6 +19,8 @@ const ENTRIES: JournalEntry[] = [
     excerpt:
       "Cleanse, treat, restore, seal — how the four formulas layer for the way skin repairs overnight.",
     href: "/journal",
+    image: "/brand/products/journal-ritual.jpg",
+    imageAlt: "The four-step ritual — ceramic dish, linen, sage",
   },
   {
     category: "Founder",
@@ -24,6 +28,8 @@ const ENTRIES: JournalEntry[] = [
     excerpt:
       "A regenerative-medicine career, distilled into four products you can use at home.",
     href: "/journal",
+    image: "/brand/products/journal-founder.jpg",
+    imageAlt: "A founder's notebook and morning tea",
   },
 ];
 

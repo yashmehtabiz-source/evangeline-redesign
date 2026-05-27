@@ -10,6 +10,8 @@ export interface Concern {
   href: string;
   /** Product photo path; absent falls back to a placeholder. */
   image?: string;
+  /** Specific alt for the image; falls back to a title/name composite. */
+  imageAlt?: string;
 }
 
 export default function ConcernCard({
@@ -18,6 +20,7 @@ export default function ConcernCard({
   body,
   href,
   image,
+  imageAlt,
 }: Concern) {
   return (
     <Link
@@ -27,7 +30,7 @@ export default function ConcernCard({
       {image ? (
         <BrandImage
           src={image}
-          alt={`${title} — ${name}`}
+          alt={imageAlt ?? `${title} — ${name}`}
           aspectRatio="1/1"
           sizes="(max-width: 768px) 50vw, 25vw"
         />

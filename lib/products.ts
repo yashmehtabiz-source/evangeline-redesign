@@ -29,6 +29,7 @@ export const products: Product[] = [
     ],
     heroPromise:
       "Begin every ritual on clean, conditioned skin — never tight, never stripped.",
+    image: "/brand/products/cleanser-bottle.jpg",
   },
   {
     slug: "biostem-serum",
@@ -62,6 +63,7 @@ export const products: Product[] = [
     ],
     heroPromise:
       "Restore the look of rested, lifted eyes — engineered for the most delicate skin you have.",
+    image: "/brand/products/eye-restore-bottle.jpg",
   },
   {
     slug: "biostem-daily-moisture-complex",
@@ -78,6 +80,7 @@ export const products: Product[] = [
     ],
     heroPromise:
       "The finishing step — lasting moisture and barrier support to carry results through the day.",
+    image: "/brand/products/moisturizer-bottle.jpg",
   },
 ];
 

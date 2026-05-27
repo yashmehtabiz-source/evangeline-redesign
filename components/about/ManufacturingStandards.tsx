@@ -1,5 +1,5 @@
 import Section from "@/components/Section";
-import Placeholder from "@/components/Placeholder";
+import BrandImage from "@/components/BrandImage";
 import Eyebrow from "@/components/Eyebrow";
 import Reveal from "@/components/Reveal";
 
@@ -37,10 +37,11 @@ export default function ManufacturingStandards() {
       <Reveal>
         <div className="grid items-center gap-10 rounded-[var(--radius-card)] border border-taupe/60 bg-surface p-6 md:grid-cols-2 md:gap-12 md:p-12">
           {/* Facility */}
-          <Placeholder
-            label="Manufacturing — Vancouver Facility"
+          <BrandImage
+            src="/brand/products/manufacturing-vancouver.jpg"
+            alt="Evangeline laboratory in Vancouver — formulation in progress"
             aspectRatio="4/3"
-            note="Clean lab interior, gloved hands, or product flat-lay on neutral surface — restrained editorial"
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
 
           {/* Copy */}

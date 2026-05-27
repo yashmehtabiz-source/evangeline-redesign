@@ -17,18 +17,24 @@ const CONCERNS: Concern[] = [
     title: "Biostem Daily Moisture Complex",
     body: "Liposomal hydration with azelaic acid for calm, even skin.",
     href: "/shop/biostem-daily-moisture-complex",
+    image: "/brand/products/concern-hydration.jpg",
+    imageAlt: "Hydration — clear water droplet on warm cream",
   },
   {
     name: "Under-Eye Concerns",
     title: "Biopeptide Eye Restore",
     body: "Tripeptides and diamond extract for puffiness, fine lines, and dark circles.",
     href: "/shop/biopeptide-eye-restore",
+    image: "/brand/products/concern-eye.jpg",
+    imageAlt: "Calm — smooth jade stone on linen",
   },
   {
     name: "Daily Cleanse",
     title: "Nourishing BioPro Cleanser",
     body: "Kombucha and niacinamide. Removes everything, strips nothing.",
     href: "/shop/nourishing-biopro-cleanser",
+    image: "/brand/products/concern-cleanse.jpg",
+    imageAlt: "Cleanse — white foam macro texture",
   },
 ];
 
