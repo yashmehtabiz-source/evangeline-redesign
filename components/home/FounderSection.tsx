@@ -1,6 +1,6 @@
 import Section from "@/components/Section";
 import Button from "@/components/Button";
-import Placeholder from "@/components/Placeholder";
+import BrandImage from "@/components/BrandImage";
 import Eyebrow from "@/components/Eyebrow";
 import Reveal from "@/components/Reveal";
 
@@ -10,10 +10,11 @@ export default function FounderSection() {
       <div className="grid items-center gap-10 md:grid-cols-5 md:gap-14">
         {/* Portrait — ~60% */}
         <Reveal className="md:col-span-3">
-          <Placeholder
-            label="Founder Portrait"
+          <BrandImage
+            src="/brand/products/founder-portrait.jpg"
+            alt="Dr. Riam Shammaa, MD — founder of Evangeline"
             aspectRatio="4/5"
-            note="Dr. Shammaa — editorial, soft natural light, lab or studio backdrop, ideally direct gaze to camera"
+            sizes="(max-width: 768px) 100vw, 60vw"
           />
         </Reveal>
 

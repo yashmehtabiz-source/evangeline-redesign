@@ -25,7 +25,7 @@ export default function ConcernCard({
   return (
     <Link
       href={href}
-      className="group flex flex-col rounded-[var(--radius-card)] border border-taupe/60 bg-surface p-6 transition-all duration-300 hover:-translate-y-1 hover:border-sage"
+      className="group flex h-full flex-col rounded-[var(--radius-card)] border border-taupe/60 bg-surface p-6 transition-all duration-300 hover:-translate-y-1 hover:border-sage"
     >
       {image ? (
         <BrandImage
