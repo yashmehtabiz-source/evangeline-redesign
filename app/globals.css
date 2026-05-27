@@ -73,3 +73,32 @@
     color: var(--color-surface);
   }
 }
+
+/* ------------------------------------------------------------------ */
+/*  Hero ritual sequencer — staggered bottle entrance (CSS, no lib)     */
+/* ------------------------------------------------------------------ */
+@keyframes bottleIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Per-bottle animation-delay is set inline; "both" holds the start state
+   during the delay and the end state after. */
+.seq-bottle {
+  opacity: 0;
+  animation: bottleIn 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .seq-bottle {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}

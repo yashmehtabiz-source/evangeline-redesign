@@ -1,7 +1,7 @@
 import Button from "@/components/Button";
-import BrandImage from "@/components/BrandImage";
 import Eyebrow from "@/components/Eyebrow";
 import Reveal from "@/components/Reveal";
+import RitualSequencer from "@/components/home/RitualSequencer";
 
 export default function Hero() {
   return (
@@ -28,16 +28,10 @@ export default function Hero() {
           </p>
         </Reveal>
 
-        {/* Editorial image */}
-        <Reveal delay={120} className="md:pl-6">
-          <BrandImage
-            src="/brand/products/ritual-group-1.jpg"
-            alt="Evangeline ritual — the four-product collection"
-            aspectRatio="4/5"
-            priority
-            sizes="(max-width: 768px) 100vw, 50vw"
-          />
-        </Reveal>
+        {/* Animated ritual sequencer (replaces the static hero image) */}
+        <div className="md:pl-6">
+          <RitualSequencer />
+        </div>
       </div>
     </section>
   );
