@@ -13,9 +13,9 @@ export default function Home() {
     <>
       <Hero />
       <BiostimulationStrip />
-      <ShopByConcern />
-      <FounderSection />
       <TheRitual />
+      <FounderSection />
+      <ShopByConcern />
       <Testimonials />
       <ClinicalAuthority />
       <JournalTeaser />
